@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.board {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.column {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 30%;
+}
+
+.column h2 {
+    text-align: center;
+    color: #555;
+}
+
+.task {
+    background-color: #e2e2e2;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    cursor: grab;
+}
+
+.task:active {
+    cursor: grabbing;
+}
+
+.column.over {
+    border: 2px dashed #000;
+}
+
+.counters {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.counters p {
+    font-size: 16px;
+    color: #333;
+}
